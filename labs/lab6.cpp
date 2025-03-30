@@ -1,5 +1,28 @@
 /*
-//DO NOT MODIFY THIS SECTION
+Problem 4. Geometry Calculator with functions and menu
+Make a C++ program that calculates the area of different geometric shapes: circle, rectangle, and
+triangle. The program should allow the user to choose a shape, enter the required dimensions, and
+receive the computed area. All arguments should be passed by value.
+Implement a loop to allow repeated calculations until the user chooses to exit.
+
+It must have the following functions:
+• displayMenu(): Displays a menu with options: Circle, Rectangle, Triangle, and Exit.
+
+• calculateCircleArea(double): Accepts the radius as a parameter (by value) and returns the area
+    using the formula:
+        A=π×r2
+
+• calculateRectangleArea(double, double): Accepts the length and width (by value) and returns
+    the area using the formula:
+        A=length×width
+
+• calculateTriangleArea(double, double): Accepts the base and height (by value) and returns the
+    area using the formula:
+        A=1/2×base×height
+
+• displayResult(double, std::string): Accepts the computed area and shape name (by value) and
+    displays the result.
+*/
 #include <iostream>
 #include <iomanip>
 #include <cmath> // For pow function (if needed in extensions)
@@ -76,4 +99,4 @@ double calculateTriangleArea(double base, double height) {
 void displayResult(string shape, double area) {
     cout << "The area of the " << shape << " is " << fixed << setprecision(2) << area << endl << endl;
 }
-*/
+

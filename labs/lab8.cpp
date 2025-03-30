@@ -1,4 +1,31 @@
-//DO NOT MODIFY THIS SECTION
+/*
+Problem 2. Weather Statistics
+Write a program that uses a structure to store the following weather data for a particular month:
+• Total Rainfall
+• High Temperature
+• Low Temperature
+• Average Temperature
+The program should have an array of 12 structures to hold weather data for an entire year. When the
+program runs, it should ask the user to enter data for each month. (The average temperature should be
+calculated.)
+
+Once the data are entered for all the months, the program should calculate and display the average
+monthly rainfall, the total rainfall for the year, the highest and lowest temperatures for the year (and
+the months they occurred in) (use index), and the average of all the monthly average temperatures.
+
+Input Validation: Only accept temperatures within the range between -100 and +140 degrees
+Fahrenheit.
+
+Problem 3. Multiple sentences and file
+Modify the previous program so it will be able to read the data from a file or write to it if the user
+requests it. Use a menu, for:
+1) Read from the file
+2) Read from the keyboard
+3) Display data including calculated information.
+4) Write to file
+5) Exit
+Example of file "weather.txt":
+*/
 #include <iostream>
 #include <fstream>
 using namespace std;

@@ -1,4 +1,13 @@
-/*#include <iostream>
+/*
+Largest/Smallest Array Values
+Write a program that lets the user enter values into a vector until the user introduces -1.
+The program should then display the largest and smallest values stored in the vector.
+
+Larger Than n
+In a program, write a function that accepts three arguments: a vector, and a number n . Assume that the vector contains integers.
+The function should display all of the numbers in the vector that are greater than the number n. Do not pass the size of the vector.
+*/
+#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -41,4 +50,3 @@ int main() {
 
     largerThanN(values, n);
 }
-*/

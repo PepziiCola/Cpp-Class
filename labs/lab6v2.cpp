@@ -1,4 +1,13 @@
 /*
+Problem 3. Number Analysis Program
+Write a program that asks the user for a file name. Assume the file contains a series of integer
+numbers, each written on a separate line (maximum 20). The program should read the contents of the
+file into an array and then display the following data:
+• The lowest number in the array
+• The highest number in the area
+• The total of the numbers in the array
+• The average of the numbers in the array
+*/
 //DO NOT MODIFY THIS SECTION
 #include <iostream>
 #include <fstream>
@@ -53,6 +62,19 @@ void displayData(int lowest, int highest, int total, double average) {
 }
 
 /*
+Problem 2. Menu Driven Program, improved with arrays
+The menu driven program must be improved this way:
+• If the file does not exist, a message will be shown and when saving, the file will be created.
+• It can contain any number or entries, maximum 50, instead of 3.
+• It will use parallel arrays, one with strings, and the other with integers for the age.
+• Entries can be added, but not removed (yet).
+
+Problem 5. Menu Driven Program Statistics
+From Problem 2, add an option to display the next information:
+• Older student (name)
+• Young student (name)
+• Age average.
+ */
 //DO NOT MODIFY THIS SECTION
 #include <iostream>
 #include <fstream>
@@ -191,4 +213,3 @@ void save() {
     saved = true;
     ofile.open("students.txt");
 }
-*/

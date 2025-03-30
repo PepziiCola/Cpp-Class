@@ -1,5 +1,10 @@
 /*
-//DO NOT MODIFY THIS SECTION
+Problem 3. Menu-driven program with file and functions
+In the lab of Chapter 5, we created a menu-driven program. Modify it so it will have functions for
+each of the options, instead of having all the code in the main() function.
+In the code, some variables must be globals, because their values need to be accessible from the
+functions.
+*/
 #include <iostream>
 #include <iomanip>
 #include <cmath> // For pow function (if needed in extensions)
@@ -76,113 +81,5 @@ double calculateTriangleArea(double base, double height) {
 void displayResult(string shape, double area) {
     cout << "The area of the " << shape << " is " << fixed << setprecision(2) << area << endl << endl;
 }
-*/
 
-/*
-//DO NOT MODIFY THIS SECTION
-#include <iostream>
-#include <fstream>
-#include <string>
-using namespace std;
 
-//prototypes
-void modify1();
-void modify2();
-void modify3();
-void displayData();
-void save();
-
-//globals
-int age1, age2, age3, option = 0;
-string name1, name2, name3;
-ifstream ifile;
-ofstream ofile;
-bool saved;
-
-int main() {
-    ifile.open("students.txt");
-    //ADD YOUR CODE FROM HERE, INCLUDE YOUR FUNCTIONS
-
-    ifile.close();
-    ofile.open("students.txt");
-
-    while (!saved) {
-        cout << "Choose your option from below" << endl;
-        cout << "(1) Modify student 1." << endl;
-        cout << "(2) Modify student 2." << endl;
-        cout << "(3) Modify student 3." << endl;
-        cout << "(4) Print data." << endl;
-        cout << "(5) Save data." << endl;
-        cout << "Which option: ";
-        cin >> option;
-
-        switch (option) {
-            case 1:
-                modify1();
-                break;
-            case 2:
-                modify2();
-                break;
-            case 3:
-                modify3();
-                break;
-            case 4:
-                displayData();
-                break;
-            case 5:
-                save();
-                break;
-            default:
-                cout << "Invalid input" << endl;
-                break;
-        }
-    }
-}
-
-void modify1() {
-    cin.ignore();
-    cout << "Enter student #1's name: ";
-    getline(cin, name1);
-    cout << "Enter student #1's age: ";
-    cin >> age1;
-    ofile << age1 << " " << name1 << endl;
-}
-
-void modify2() {
-    cin.ignore();
-    cout << "Enter student #2's name: ";
-    getline(cin, name2);
-    cout << "Enter student #2's age: ";
-    cin >> age2;
-    ofile << age2 << " " << name2 << endl;
-}
-
-void modify3() {
-    cin.ignore();
-    cout << "Enter student #3's name: ";
-    getline(cin, name3);
-    cout << "Enter student #3's age: ";
-    cin >> age3;
-    ofile << age3 << " " << name3 << endl;
-}
-
-void displayData() {
-    string line;
-    ifile.open("students.txt");
-    cout << "Data: " << endl;
-
-    while (getline(ifile, line)) {
-        cout << line << endl;
-    }
-
-    cout << endl;
-
-    ifile.close();
-}
-
-void save() {
-    ofile.close();
-    saved = true;
-    ofile.open("students.txt");
-}
-*/

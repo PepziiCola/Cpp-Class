@@ -1,4 +1,10 @@
 /*
+Problem 1. Dealing with a file
+
+Make a program that will read integer numbers the user introduces until the user enters -1.
+The numbers must be written to the file “numbers.txt”. The program must close the file and then open it again for reading.
+The program must read the numbers from the file, display them on the screen, and close the file again.
+ **/
 //DO NOT MODIFY THIS SECTION
 #include <iostream>
 #include <fstream>
@@ -28,4 +34,4 @@ int main() {
 
     ifile.close();
 }
-*/
+
